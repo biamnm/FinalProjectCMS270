@@ -29,6 +29,19 @@ public class LogInPage extends JFrame {
         panel.add(loginButton);
 
         add(panel);
+        
+        loginButton.addActionListener(e -> {
+            String username = userField.getText();
+            String password = new String(passField.getPassword());
+
+            if (username.equals("Student") && password.equals("CMS270")) {
+                new MenuPage();
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(this,
+                        "Incorrect username or password.");
+            }
+        });
 
         setVisible(true);
     }
