@@ -2,7 +2,6 @@ import javax.swing.*;
 
 public class LogInPage extends JFrame {
 
-    // Declare fields the same way you did in CalculatorView  
     JTextField userField = new JTextField(10);
     JPasswordField passField = new JPasswordField(10);
 
